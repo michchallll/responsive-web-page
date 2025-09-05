@@ -69,6 +69,7 @@ nav li {
 .content-container {
   position: absolute;
   bottom: 5%;
+  margin-right: 35px;
 }
 
 .hero-text {
@@ -87,7 +88,7 @@ nav li {
 
 @media only screen and (min-width: 768px) {
   .content-container {
-    margin-right: 15px;
+    margin-right: 50px;
   }
 }
 
