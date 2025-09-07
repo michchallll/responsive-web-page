@@ -74,7 +74,7 @@ nav li {
 
 .hero-text {
   color: #fff;
-  font-size: 2.5em;
+  font-size: 3em;
   width: 100%;
   text-align: right;
   display: inline-block;
@@ -82,7 +82,7 @@ nav li {
 
 @media only screen and (max-width: 768px) {
   .hero-text {
-    font-size: 1.5em;
+    font-size: 1.7em;
   }
 }
 
@@ -99,24 +99,21 @@ nav li {
   }
 }
 
-.about-us {
-  height: calc(100vh - 50px);
-}
-
 .about-us-container {
   display: flex;
   flex-direction: column;
-  margin: 50px 35px;
+  padding: 50px 35px;
   gap: 30px;
 }
 
 .about-us-text h2 {
   font-size: 1.8em;
-  margin-bottom: 20px;
+  padding-bottom: 20px;
 }
 
-.about-us p {
+p {
   font-size: 1em;
+  line-height: 1.35;
 }
 
 img {
@@ -132,14 +129,13 @@ img {
 
 @media only screen and (min-width: 768px) {
   .about-us {
-    height: 100vh;
     display: grid;
     align-self: center;
   }
 
   .about-us-container {
     flex-direction: row;
-    margin: 10% 50px;
+    padding: 10% 50px;
   }
 
   .about-us-container div {
@@ -152,7 +148,7 @@ img {
   }
 
   .about-us h2 {
-    font-size: 3em;
+    font-size: 4em;
   }
 
   .about-us p {
@@ -166,6 +162,85 @@ img {
 
 @media only screen and (min-width: 992px) {
   .about-us-container {
-    margin: 10% 18%;
+    padding: 7% 18%;
+  }
+}
+
+.what-we-do {
+  color: #fff;
+  text-align: center;
+  background-color: #33292a;
+}
+
+.what-we-do-container {
+  padding: 50px 35px;
+}
+
+.what-we-do-text {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 50px;
+}
+
+.what-we-do-text h2 {
+  font-size: 1.8em;
+  padding-bottom: 20px;
+}
+
+.icons {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.icons-child img {
+  height: 110px;
+}
+
+.icons-child-text {
+  font-weight: bold;
+  font-size: 1.9em;
+  padding-top: 20px;
+}
+
+#surfing {
+  padding-top: 0px;
+}
+
+@media only screen and (min-width: 768px) {
+  .what-we-do-container {
+    padding: 10% 50px;
+  }
+
+  .what-we-do-text h2 {
+    font-size: 4em;
+  }
+
+  .icons {
+    flex-direction: row;
+    align-self: center;
+    justify-content: space-between;
+  }
+
+  .icons-child img {
+    height: 65px;
+  }
+
+  .icons-child-text {
+    font-size: 2em;
+  }
+
+  #surfing {
+    padding-top: 20px;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .what-we-do-container {
+    padding: 7% 18%;
+  }
+
+  .icons {
+    padding-top: 40px;
   }
 }
