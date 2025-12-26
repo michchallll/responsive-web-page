@@ -8,6 +8,7 @@ body {
   font-family: Roboto, sans-serif;
 }
 
+/* navigation section */
 nav {
   background-color: #33292a;
   height: 50px;
@@ -55,6 +56,7 @@ nav li {
   }
 }
 
+/* hero section */
 .hero {
   background-image: url(images/scott-goodwill-y8Ngwq34_Ak-unsplash.jpg);
   background-position: center;
@@ -95,10 +97,11 @@ nav li {
 @media only screen and (min-width: 992px) {
   .content-container {
     margin-right: 18%;
-    font-size: 1.5em;
+    font-size: 0.9em;
   }
 }
 
+/* about us section */
 .about-us-container {
   display: flex;
   flex-direction: column;
@@ -128,11 +131,6 @@ img {
 }
 
 @media only screen and (min-width: 768px) {
-  .about-us {
-    display: grid;
-    align-self: center;
-  }
-
   .about-us-container {
     flex-direction: row;
     padding: 10% 50px;
@@ -164,12 +162,18 @@ img {
   .about-us-container {
     padding: 7% 18%;
   }
+
+  .about-us h2 {
+    font-size: 2.5em;
+  }
 }
 
+/* what we do section */
 .what-we-do {
   color: #fff;
   text-align: center;
   background-color: #33292a;
+  text-shadow: 1px 1px 2px #000;
 }
 
 .what-we-do-container {
@@ -210,6 +214,10 @@ img {
     padding: 10% 50px;
   }
 
+  .want-to-go-text {
+    font-size: 1.1em;
+  }
+
   .what-we-do-text h2 {
     font-size: 4em;
   }
@@ -241,8 +249,13 @@ img {
   .icons {
     padding-top: 40px;
   }
+
+  .what-we-do-text h2 {
+    font-size: 2.5em;
+  }
 }
 
+/* our trips section */
 .our-trips-container {
   display: flex;
   flex-direction: column;
@@ -277,6 +290,7 @@ img {
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, 1fr);
     gap: 10px;
+    padding: 10% 50px;
   }
 
   .our-trips-child img {
@@ -296,5 +310,85 @@ img {
 @media only screen and (min-width: 992px) {
   .our-trips-container {
     padding: 7% 18%;
+    gap: 15px;
+  }
+
+  .our-trips-text h2 {
+    font-size: 2.5em;
+  }
+
+  .our-trips-child img {
+    height: 240px;
+  }
+}
+
+/* where do you want to go section */
+.want-to-go {
+  background-color: #644b4f;
+  color: #fff;
+  text-shadow: 1px 1px 2px #000;
+}
+
+.want-to-go-container {
+  display: flex;
+  flex-direction: column;
+  padding: 50px 35px;
+}
+
+.want-to-go-container h2 {
+  font-size: 1.8em;
+  margin-bottom: 40px;
+}
+
+.first-paragraph {
+  margin-bottom: 20px;
+}
+
+.button {
+  background-color: #fff;
+  width: 135px;
+  height: 45px;
+  margin-top: 50px;
+  font-weight: bold;
+  text-transform: uppercase;
+  border-radius: 5px;
+}
+
+button:hover {
+  background-color: #f2f2f2b6;
+  cursor: pointer;
+}
+
+@media only screen and (min-width: 768px) {
+  .want-to-go-container {
+    flex-direction: row;
+    padding: 10% 50px;
+  }
+
+  .want-to-go-container h2 {
+    display: flex;
+    justify-content: center;
+    font-size: 3.5em;
+    margin-bottom: 0;
+    padding: 1% 6% 1% 10px;
+    width: 40%;
+  }
+
+  .want-to-go-text {
+    font-size: 1.1em;
+  }
+
+  .want-to-go-container div {
+    flex: 1 1 0;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .want-to-go-container {
+    padding: 7% 18%;
+  }
+
+  .want-to-go-container h2 {
+    font-size: 2.5em;
   }
 }
