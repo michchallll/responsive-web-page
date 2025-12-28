@@ -146,7 +146,7 @@ img {
   }
 
   .about-us h2 {
-    font-size: 4em;
+    font-size: 3.5em;
   }
 
   .about-us p {
@@ -219,7 +219,7 @@ img {
   }
 
   .what-we-do-text h2 {
-    font-size: 4em;
+    font-size: 3.5em;
   }
 
   .icons {
@@ -390,5 +390,122 @@ button:hover {
 
   .want-to-go-container h2 {
     font-size: 2.5em;
+  }
+}
+
+/* reviews section */
+.reviews {
+  text-align: center;
+}
+
+.reviews-container {
+  display: flex;
+  flex-direction: column;
+  padding: 50px 35px;
+}
+
+.reviews-container h2 {
+  font-size: 1.8em;
+  margin-bottom: 25px;
+}
+
+.reviews-text-child {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.reviews-text-child h3 {
+  font-size: 1.1em;
+  padding-top: 30px;
+}
+
+.review-image-wrapper {
+  padding-top: 70px;
+  padding-bottom: 30px;
+}
+
+.review-image {
+  width: 115px;
+  height: 115px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.review-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transform: scale(1.25);
+}
+
+.first-image {
+  transform-origin: 50% 70%;
+}
+
+.second-image {
+  transform-origin: 50% 0;
+}
+
+@media only screen and (min-width: 768px) {
+  .reviews-container {
+    font-size: 1.1em;
+    padding: 10% 50px;
+  }
+
+  .reviews-container h2 {
+    font-size: 3.5em;
+  }
+
+  .reviews-introduction p {
+    padding: 0 14% 20px 14%;
+  }
+
+  .reviews-text {
+    display: flex;
+    flex-direction: row;
+    gap: 5%;
+  }
+
+  .reviews-text-child h3 {
+    font-size: 1.2em;
+  }
+
+  .review-image {
+    width: 160px;
+    height: 160px;
+  }
+
+  .review-image img {
+    transform: scale(1);
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .reviews-container {
+    padding: 7% 18%;
+  }
+
+  .reviews-container h2 {
+    font-size: 2.5em;
+  }
+
+  .reviews-introduction p {
+    padding: 0 25% 20px 25%;
+  }
+
+  .reviews-text {
+    display: flex;
+    flex-direction: row;
+    gap: 10%;
+  }
+
+  .review-image {
+    width: 120px;
+    height: 120px;
+  }
+
+  .review-image img {
+    transform: scale(1.25);
   }
 }
